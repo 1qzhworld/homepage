@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhihai Qu's Personal Academic Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            color: #000;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            padding-right: 60px; /* 添加右侧填充 */
+        }
+        .content h1 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            height: auto;
+            margin-right: 20px; /* 设置图像和文本之间的间距 */
+            width: 300px; /* 设置图像的宽度 */
+            height: auto; /* 保持图像的宽高比 */
+        }
+        .email-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .email {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .email-label {
+            width: 60px; /* Adjust this width as needed */
+        }
+        .research_interest-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .research_interest {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .research_interest-label {
+            width: 140px; /* Adjust this width as needed */
+        }
+        .research-interest-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#">Home</a>
+        <a href="#">Publications</a>
+        <a href="#">Biography</a>
+    </div>
+    <div class="content">
+        <h1>Zhihai Qu:  Seeking a Postdoctoral Position</h1>
+        <div class="profile">
+            <img src="./figs/cycling_Zhihai_qu.jpg" alt="Zhihai Qu">
+            <div>
+                <p>
+                    Zhihai Qu, Ph.D. (graduating December 2024)<br>
+                    Tongji University <br>
+                    <br>
+                    Address: No. 1239 Siping Road, Shanghai, 200092, P.R. China 
+                </p>
+                <div class="email-container">
+                    <div class="email">
+                        <span class="email-label">E-mail:</span> quzhh @[AT]@ tongji.edu.cn;
+                    </div>
+                    <div class="email">
+                        <span class="email-label"></span> quzhh1 @[AT]@ outlook.com
+                    </div>
+                </div>
+                <p class="research-interest-title">Research Interests (not limited to):</p>
+                <p>
+                    Fault-tolerant systems; <br>
+                    Distributed optimization (esp. under <i>Byzantine attacks</i>); <br>
+                    Federated learning; <br>
+                    Online optimization.     
+                </p>
+                <p class="research-interest-title">Short Introduction:</p>
+                When agents become unreliable, adversarial agents may take control of the network. I am interested in developing robust algorithms urgently needed for current research, particularly in distributed scenarios, including both fully distributed and federated learning, as well as online and offline environments.
+            </div>
+        </div>
+        <h2>Publications</h2>
+
+            <h3>Journal Papers</h3>
+            <p>
+                [5] <b>Z. Qu</b>, X. Li, L. Li, and X. Yi, “Online optimization under randomly corrupted attacks,” <i>IEEE Transactions on Signal Processing</i>, vol. 72, pp. 2160–2172, Apr. 2024, doi: <a href="https://doi.org/10.1109/TSP.2024.3392361">10.1109/TSP.2024.3392361</a>. <br>
+                [4] <b>Z. Qu</b>, X. Li, L. Li, and Y. Hong, “Linearly Convergent Second-Order Distributed Optimization Algorithms,” <i>IEEE Transactions on Automatic Control</i>, pp. 1–8, 2024, doi: <a href="https://doi.org/10.1109/TAC.2024.3360287">10.1109/TAC.2024.3360287</a>. <br>
+                [3] <b>Z. Qu</b> and L. Jie, “Distributed finite-time-consensus-based heavy-ball algorithm,” <i>Journal of University of Chinese Academy of Sciences</i>, vol. 39, no. 1, Art. no. 127, 2022, doi: <a href="http://journal.ucas.ac.cn/EN/10.7523/j.ucas.2020.0009">10.7523/j.ucas.2020.0009</a>. <br>
+                [2] H. Wei, <b>Z. Qu</b>, X. Wu, H. Wang, and J. Lu, “Decentralized approximate newton methods for convex optimization on networked systems,” <i>IEEE Transactions on Control of Network Systems</i>, vol. 8, no. 3, pp. 1489–1500, 2021, doi: <a href="https://doi.org/10.1109/TCNS.2021.3070663">10.1109/TCNS.2021.3070663</a>. <br>
+                [1] X. Wu, <b>Z. Qu</b>, and J. Lu, “A Second-Order Proximal Algorithm for Consensus Optimization,” <i>IEEE Transactions on Automatic Control</i>, vol. 66, no. 4, pp. 1864–1871, Apr. 2021, doi: <a href="https://doi.org/10.1109/TAC.2020.2996205">10.1109/TAC.2020.2996205</a>.
+            </p>
+        
+            <h3>Conference Papers</h3>
+            <p>
+                [5] K. He, <b>Z. Qu</b>, and X. Li, “On linear convergence of adaptive sign-based gradient descent,” in <i>2024 36th Chinese Control and Decision Conference (CCDC)</i>, 2024, pp. 449–454. doi: <a href="https://doi.org/10.1109/CCDC62350.2024.10588228">10.1109/CCDC62350.2024.10588228</a>. <br>
+                [4] <b>Z. Qu</b>, X. Li, L. Li, and Y. Hong, “Distributed second-order method with diffusion strategy,” in <i>2023 IEEE International Conference on Systems, Man, and Cybernetics (SMC)</i>, 2023, pp. 2022–2027. doi: <a href="https://doi.org/10.1109/SMC53992.2023.10394381">10.1109/SMC53992.2023.10394381</a>. <br>
+                [3] Y. Zhou, J. Lv, <b>Z. Qu</b>, and D. Dai, “How to Support the Decision-Making Process of Community Regeneration in Megacities Based on Evolutionary Game——A Case Study in Shanghai,” in <i>Innovation in Urban and Regional Planning</i>, vol. 242, in <i>Lecture Notes in Civil Engineering</i>, vol. 242. Cham: Springer International Publishing, 2022, pp. 83–93. doi: <a href="https://doi.org/10.1007/978-3-030-96985-1_10">10.1007/978-3-030-96985-1_10</a>. <br>
+                [2] <b>Z. Qu</b>, X. Wu, and J. Lu, “Finite-time-consensus-based methods for distributed optimization,” in <i>2019 Chinese Control Conference (CCC)</i>, 2019, pp. 5764–5769. doi: <a href="https://doi.org/10.23919/ChiCC.2019.8865722">10.23919/ChiCC.2019.8865722</a>. <br>
+                [1] H. Wei, <b>Z. Qu</b>, X. Wu, H. Wang, and J. Lu, “An Approximately-Zero-Gradient-Sum Algorithm for Consensus Optimization,” in <i>2018 15th International Conference on Control, Automation, Robotics and Vision (ICARCV)</i>, Singapore: IEEE, Nov. 2018, pp. 826–830. doi: <a href="https://doi.org/10.1109/ICARCV.2018.8581380">10.1109/ICARCV.2018.8581380</a>.
+            </p>
+        <h2> Biography </h2>
+        <p>Zhihai Qu received his B.S. degree in Electronic Information Science and Technology from Hefei University of Technology, Anhui, China, in 2017, and the Master's degree in Communication and Information Systems from the University of Chinese Academy of Sciences, China, in 2020. After that, he joined Hithink Royal Flush Info. Network Co. as an algorithm developer, and now he is expected to finish his Ph.D. degree in Control Science and Engineering at Tongji University, China, in December 2024.
+        His research interests include, but are not limited to, developing algorithms for distributed optimization, federated learning, and online optimization problems, especially the security issues therein. </p>
+
+        <p>After working in the company, where he was also an algorithm developer, he believes that he is still passionate about doing more interesting and realistic research. He believes that solely publishing more work may not make the world better, but good work can. Academic research and practical implementation are both important for the world. Currently, he is seeking a postdoctoral position.</p>
+    </div>
+</body>
+</html>
