@@ -30,6 +30,8 @@
             flex-grow: 1;
             padding: 20px;
             padding-right: 60px; /* 添加右侧填充 */
+            display: flex;
+            flex-direction: column;
         }
         .content h1 {
             border-bottom: 1px solid #ddd;
@@ -74,6 +76,17 @@
         .research-interest-title {
             font-size: 24px;
             font-weight: bold;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center; /* 居中对齐图片 */
+            margin-top: auto; /* 将图片容器推至底部 */
+            padding: 20px; /* 添加一些填充 */
+            width: 100%; /* 确保容器宽度为100% */
+        }
+        .image-container img {
+            height: 400px; /* 设置相同的高度 */
+            margin-right: 10px; /* 图片之间的间距 */
         }
     </style>
 </head>
@@ -138,6 +151,13 @@
         His research interests include, but are not limited to, developing algorithms for distributed optimization, federated learning, and online optimization problems, especially the security issues therein. </p>
 
         <p>After working in the company, where he was also an algorithm developer, he believes that he is still passionate about doing more interesting and realistic research. He believes that solely publishing more work may not make the world better, but good work can. Academic research and practical implementation are both important for the world. Currently, he is seeking a postdoctoral position.</p>
+    
+        <div class="image-container">
+            <img src="./figs/network_with_adversary.jpeg" alt="Distributed systems with adversaries">
+            <img src="./figs/Zhihai_Qu_CV_Ph.D_V0.4_ConclusionPage_Cropped.jpg" alt="Security is an important problem">
+            <img src="./figs/UAV_formation.jpeg" alt="UAV formation">
+        </div>
     </div>
+    
 </body>
 </html>
