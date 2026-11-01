@@ -77,6 +77,39 @@
             font-size: 24px;
             font-weight: bold;
         }
+        .experience {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .experience-item {
+            border-left: 3px solid #ddd;
+            padding-left: 16px;
+        }
+        .experience-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .experience-role {
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .experience-period {
+            color: #666;
+            white-space: nowrap;
+        }
+        .experience-org {
+            color: #444;
+            font-style: italic;
+            margin-top: 2px;
+        }
+        .experience-item p {
+            margin: 8px 0 0 0;
+        }
         .image-container {
             display: flex;
             justify-content: center; /* 居中对齐图片 */
@@ -94,8 +127,9 @@
     <div class="sidebar">
         <h2>Navigation</h2>
         <a href="#">Home</a>
-        <a href="#">Publications</a>
-        <a href="#">Biography</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#biography">Biography</a>
     </div>
     <div class="content">
         <h1>Zhihai Qu</h1>
@@ -104,6 +138,9 @@
             <div>
                 <p>
                     Zhihai Qu, Ph.D. 
+                    <br>
+                    Engineer, Placement R&amp;D Department, X-Times Design Automation Co., Ltd. (XTIMES-DA)
+                    <br>
                     <!-- (Defended on January 13, 2025) -->
                     <!-- <br>
                     Tongji University <br>
@@ -137,14 +174,51 @@
                             <li>Adversarial/corrupted feedback attacks in online optimization</li>
                             <li>Expert advice</li>
                         </ul>
-                        <li><b>Focusing:</b> Optimization and machine learning related topics 
+                        <li><b>Current focus:</b> Placement and routing (P&amp;R) in the physical design of EDA -
+                            optimization and machine learning for digital chip implementation</li>
+                        <li><b>Also interested in:</b> Optimization and machine learning related topics 
                             (such as reinforcement learning, large language models), multi-objective optimization, constraint programming - satisfiability</li>
                     </ul>
                 <p class="research-interest-title">Short Introduction:</p>
                 When agents become unreliable, adversarial agents may take control of the network. I am interested in developing robust algorithms urgently needed for current research, particularly in distributed scenarios, including both fully distributed and federated learning, as well as online and offline environments. I am also open to impactful research fields, such as reinforcement learning and large language models.
             </div>
         </div>
-        <h2>Publications</h2>
+
+        <h2 id="experience">Work Experience</h2>
+        <div class="experience">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-role">Engineer, Placement R&amp;D Department</span>
+                    <span class="experience-period">Sep. 2026 &ndash; Present</span>
+                </div>
+                <div class="experience-org"><a href="https://www.xtimes-da.com">X-Times Design Automation Co., Ltd. (XTIMES-DA)</a></div>
+                <p>Working on placement in the physical design of digital implementation EDA: the optimization algorithms
+                    that decide where every cell and macro is placed on the die, and that shape the geometry on which the
+                    subsequent routing, clock-tree, and timing-closure steps have to work. Placement is the first and most
+                    consequential step of the place-and-route (P&amp;R) flow, because it fixes the architecture of the layout
+                    and largely determines the achievable timing, power, and area (PPA).</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-role">Software Engineer</span>
+                    <span class="experience-period">2025 &ndash; Sep. 2026</span>
+                </div>
+                <div class="experience-org"><a href="https://www.baosight.com/">BaoSight Software (Shanghai Baosight Software Co., Ltd.)</a>, Shanghai, China</div>
+                <p>Optimized industrial supply chains with OR-Tools CP-SAT and built intelligent scheduling systems for
+                    port logistics &mdash; automating the coordination between arriving ships, berth availability,
+                    crane operations, and stockyard management.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-role">Algorithm Developer</span>
+                    <span class="experience-period">2020 &ndash; 2021</span>
+                </div>
+                <div class="experience-org"><a href="https://www.10jqka.com.cn/">Hithink Royal Flush Info. Network Co.</a></div>
+                <p>Federated learning algorithm development.</p>
+            </div>
+        </div>
+
+        <h2 id="publications">Publications</h2>
 
             <h3>Journal Papers</h3>
             <p>
@@ -173,13 +247,13 @@
                 [2] <b>Z. Qu</b>, X. Wu, and J. Lu, “Finite-time-consensus-based Methods for Distributed Optimization,” in <i>2019 Chinese Control Conference (CCC)</i>, 2019, pp. 5764–5769. doi: <a href="https://doi.org/10.23919/ChiCC.2019.8865722">10.23919/ChiCC.2019.8865722</a>. <br>
                 [1] H. Wei, <b>Z. Qu</b>, X. Wu, H. Wang, and J. Lu, “An Approximately-Zero-Gradient-Sum Algorithm for Consensus Optimization,” in <i>2018 15th International Conference on Control, Automation, Robotics and Vision (ICARCV)</i>, Singapore: IEEE, Nov. 2018, pp. 826–830. doi: <a href="https://doi.org/10.1109/ICARCV.2018.8581380">10.1109/ICARCV.2018.8581380</a>.
             </p>
-        <h2> Biography </h2>
+        <h2 id="biography"> Biography </h2>
         <p>Zhihai Qu has completed his Ph.D. in Control Science and Engineering at Tongji University, China, under the supervision of 
             <a href="https://see.tongji.edu.cn/info/1377/10313.htm"> Prof. Li Li</a>, with co-supervisors 
             <a href="https://sites.google.com/view/xiuxianli">Prof. Xiuxian Li</a> and 
-            <a href="http://lsc.amss.ac.cn/~yghong/">Prof. Yiguang Hong</a>, in December 2024, during which he was awarded the 2024 National Scholarship for Doctoral Candidates. He received his Master's degree in Communication and Information Systems from the University of Chinese Academy of Sciences, China, under the supervision of 
+            <a href="http://lsc.amss.ac.cn/~yghong/">Prof. Yiguang Hong</a>, in December 2024, during which he was awarded the 2024 <b>National Scholarship</b> for Doctoral Candidates. He received his Master's degree in Communication and Information Systems from the University of Chinese Academy of Sciences, China, under the supervision of 
             <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/lujie/">Prof. Jie Lu</a> in 2020.
-            Following his Master's studies, he joined Hithink Royal Flush Info. Network Co. as an algorithm developer, focusing on federated learning algorithm development, before leaving in 2021. He obtained his B.S. degree in Electronic Information Science and Technology from Hefei University of Technology, Anhui, China, in 2017.
+            Following his Master's studies, he joined <a href="https://www.10jqka.com.cn/">Hithink Royal Flush Info. Network Co.</a> as an algorithm developer, focusing on federated learning algorithm development, before leaving in 2021. He obtained his B.S. degree in Electronic Information Science and Technology from Hefei University of Technology, Anhui, China, in 2017.
 
         
         His research interests include, but are not limited to, developing algorithms for distributed optimization, federated learning, and online optimization problems, with a particular focus on the security issues therein.</p>
@@ -188,11 +262,14 @@
 
         <p>After working in the company, where he was also an algorithm developer, he believes that he is still passionate about doing more interesting and realistic research. He believes that solely publishing more work may not make the world better, but good work can. Academic research and practical implementation are both important for the world. </p>
 
-        <p>Influenced primarily by family considerations, and secondly by a desire to keep research as a passion rather than a profession, he recently made the decision to leave academia and join industry. He found that pursuing research as a career often brought more pressure than inspiration, and hopes that this new path will allow him to explore meaningful and practical ways to make a positive impact on the world. Whether he returns to academia one day remains uncertain—but his enthusiasm for impactful research remains unchanged.</p>
+        <p>Influenced primarily by family considerations, and secondly by a desire to keep research as a passion rather than a profession, he made the decision to leave academia and join industry. He found that pursuing research as a career often brought more pressure than inspiration, and hopes that this new path will allow him to explore meaningful and practical ways to make a positive impact on the world. Whether he returns to academia one day remains uncertain—but his enthusiasm for impactful research remains unchanged.</p>
 		
-		<p>Current Role: Software Engineer at BaoSight Software. </p>
-		<p>The Challenge: Optimizing industrial supply chains using OR-Tools CP-SAT. </p>
-		<p>The Project: Building intelligent scheduling systems for port logistics—automating the coordination between arriving ships, berth availability, crane operations, and stockyard management. </p>
+        <p>Previous Role: Software Engineer at <a href="https://www.baosight.com/">BaoSight Software</a>, where he built intelligent scheduling systems for port logistics with OR-Tools CP-SAT—automating the coordination between arriving ships, berth availability, crane operations, and stockyard management, and optimizing industrial supply chains in the process. </p>
+
+		<p>Current Role: In September 2026 he left BaoSight Software and joined <a href="https://www.xtimes-da.com">X-Times Design Automation Co., Ltd. (XTIMES-DA)</a>, a company devoted to digital-implementation EDA, where he is currently an engineer in the Placement R&amp;D Department. </p>
+		<p>The Focus: Placement and routing (P&amp;R) in the physical design of EDA—deciding where each cell of a digital chip should be placed and how the wires between them should be routed, so that timing, congestion, and design-rule constraints are satisfied at the same time. </p>
+		<p>A Short Introduction to EDA: Electronic Design Automation (EDA) is the software stack that takes a chip from a description of its behavior to a manufacturable layout. Starting from a register-transfer-level (RTL) design, it plans the floorplan, places millions of standard cells and macros, builds the clock tree, routes billions of wires, and checks timing, power, and design rules—a job that is far beyond manual effort and must be repeated many times before a single chip can be taped out. Digital implementation is the part of the flow that turns logic into geometry, and placement is its first and most consequential step, since it fixes the skeleton of the layout and bounds what the later steps (clock-tree synthesis, routing, timing closure) can still repair. The underlying problems are among the largest combinatorial optimization problems in industry, and the algorithms that solve them combine mathematical optimization, heuristic search, and, increasingly, machine learning. </p>
+		<p>The Appeal: It is one of the hardest combinatorial optimization problems in the semiconductor industry, and it lets him keep doing what he has always enjoyed—turning optimization theory into algorithms that people actually use under real production pressures of runtime and quality of results. In his view, an optimization algorithm should survive a real chip, which is the ultimate test: the silicon always gives the honest answer. </p>
 		
 		In his free time, he explores the practical side of LLM development, experimenting with various frameworks and implementation techniques to uncover new possibilities. He is eager to navigate the emerging 'Agent Age', where he focuses on the potential of multi-agent architectures and how they can be leveraged to solve complex, collaborative tasks.
         <div class="image-container">
